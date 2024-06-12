@@ -1,0 +1,664 @@
+body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: -35px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box;
+    background-color: white; /* Set background color to white */
+}
+
+.logo, .share-icon {
+    background-color: white; /* Set background color to white */
+    padding: 5px; /* Add some padding for spacing */
+}
+
+.logo img, .share-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: transparent; /* Set background color to transparent */
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    margin: 0;
+    padding: 0;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+.category-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddebfe;
+    width: 100vw;
+    overflow-x: auto;
+    padding: 15px;
+    margin: 0;
+}
+
+.category-btn {
+    background-color: #f6f6f6;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.category-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+}
+
+.product-info {
+    margin-top: 20px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-info h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the right */
+    width: 100%;
+}
+
+.text-info {
+    width: 40%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.text-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.highlight-line {
+    width: 5px;
+    height: 100px;
+    background-color: #ff8dc7;
+    position:absolute;
+    margin-top: 50%;
+    margin-right: 80%;
+    margin-left: 80px;
+    margin: 30px 0;
+   line-height: normal;
+   transform: translateY(-30%);
+}
+
+.text-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}
+
+.buy-now {
+    background-color: #ffda44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.purchase-links {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.purchase-links a {
+    margin-right: 10px;
+}
+
+.purchase-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.image-info {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-sky-blue {
+    background-color: #cce7ff;
+    width: 80%;
+    padding: 65px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: -100px;
+}
+
+
+.half-sky-blue img {
+    width: 100px;;
+    height: 60px;
+    position: absolute;
+    left: 70%;
+    height: auto;
+    transform: translateX(10%)
+}
+
+
+/* Legal Disclaimer section styles */
+.legal-disclaimer-section {
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #feeae4;
+}
+
+.card {
+    background-color: #ffe6e6;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #d8a2a2;
+    border: none;
+    border-radius: 5px;
+    padding: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    left: 50%;
+}
+
+
+
+/* Best Seller section styles */
+.best-seller-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+.cookie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ddebfe;
+    /*border: 1px solid #000;*/
+    /*background-color:#eeeeee*/
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    max-width: 300px;
+    height: 210px;
+    position: relative;
+}
+
+.cookie-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cookie-info {
+    margin-top: 70px;
+    text-align: left; /* Align text to the right */
+    width: 100%; /* Ensure it takes the full width of the card */
+}
+
+.cookie-info h3 {
+    margin: 0;
+    font-size: 1em;
+    text-align: left; /* Align text to the right */
+}
+
+.cookie-info p {
+    margin: 5px 0;
+    text-align: left; /* Align text to the right */
+}
+
+button {
+    background: #262626;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-right: 1ch;
+    color: #fff;
+}
+
+
+.limited-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+.limited-offer h2 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddebfe;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.offer-card {
+    flex-basis: 40%;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.offer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.offer-info {
+    flex-basis: 40%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.offer-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    display: inline; /* Add this line to ensure the text is inline */
+}
+.offer-info p {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.offer-info .original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.offer-info .discounted-price {
+    font-weight: bold;
+    color: green;
+}
+
+.baking-video {
+    margin-top: 20px;
+}
+
+.baking-video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding new styles from the image */
+.new-section {
+    background-color: #FFF;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.new-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.new-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.new-section .highlight {
+    background-color: #ffda44;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .best-seller-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .cookie-card {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .offer-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .offer-card img {
+        margin: 0 0 20px 0;
+    }
+
+    .offer-info {
+        text-align: center;
+    }
+
+    .offer-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .cookie-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .offer-card {
+        width: 100%;
+    }
+
+    .cookie-info h3, .offer-info h3 {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+}
+  /* Container for recipe cards */
+  recipe-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual recipe card */
+.recipe-card {
+    position: relative;
+    width: 150px; /* Adjust as needed */
+    /*border: 1px solid black;
+    border-radius: 10px;*/
+    overflow: hidden;
+}
+
+/* Recipe image */
+.recipe-card img {
+    width: 80%;
+    height: 40%;
+}
+
+/* Container for text over image */
+.recipe-info {
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading for recipe info */
+.recipe-info h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+/* Paragraph for recipe info */
+.recipe-info p {
+    margin: 0;
+    font-size: 14px;
+}
+.recipe-info .read-more {
+    background-color: #ffda44;;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    left: 80%;
+
+}
+
+
+/* Read more button over image */
+.recipe-card .Read-more {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: hsl(358, 83%, 46%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    
+    
+    .feedback-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 55px;
+            
+    }
+    
+   
+
+    .feedback-header h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .feedback-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ffe6e6; /* Light pink background color */
+        padding: 20px; /* Add padding for better spacing */
+        border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+        margin-bottom: 30px; /* Add margin bottom to create space */
+    }
+    
+    .feedback-form input[type="text"] {
+        padding: 20px;
+        align-items: center;
+        border: 0.5px solid gray;
+        border-radius: 5px;
+        width: 50%;
+        margin-left: 70px;
+    }
+    
+    .feedback-form button[type="submit"] {
+        background-color: #ffda44;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        width: 50%;
+        margin-left: 70px;
+        align-items: center;
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+        .recipe-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .recipe-card {
+            width: 100%;
+            max-width: 100%;
+        }
+        .footer {
+            background-color: #E0F2FF; /* Sky blue background */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px; 
+        }
+    
+        .logo{
+            background-color: #E0F2FF;
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+        }
+        
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #E0F2FF
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .divider {
+            width: 40%;
+            margin: 15px 0;
+            border-top: 1px solid #333;
+            text-align: left;
+        }
+        
+        
+        .social-media {
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        .social-media a {
+            margin: 0 10px;
+        }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #E0F2FF
+        }
